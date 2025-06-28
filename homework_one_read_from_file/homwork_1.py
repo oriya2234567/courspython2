@@ -49,4 +49,4 @@ if len(sys.argv) >1:
 else:
     print("you need more parameter")
 
-
+###ran the code from cmd
