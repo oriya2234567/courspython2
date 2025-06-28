@@ -45,9 +45,12 @@ def Printing_the_n_word_thats_apear_inthe_text(d,n):###printing the bigest word 
 r = open_file_and_read()
 sortdictionary =to_sort_the_text(r)
 if len(sys.argv) >1:
-    Printing_the_n_word_thats_apear_inthe_text(sortdictionary,int(sys.argv[1]))
-else:
-    print("you need more parameter")
+    try:
+        Printing_the_n_word_thats_apear_inthe_text(sortdictionary,int(sys.argv[1]))
 
-###ran the code from cmd
+    except ValueError:
+        print("The parameter must be an integer.")
+
+
+
 
